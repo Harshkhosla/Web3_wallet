@@ -1,7 +1,12 @@
 "use client"
 import { useState } from "react";
 
-export const Header = () => {
+
+type HeaderProps={
+    createWallet :()=>void; 
+}
+
+export const Header = ({createWallet}:HeaderProps) => {
     const [show, setshow] = useState(false);
     return (
         <div className="border-b" >
@@ -34,7 +39,7 @@ export const Header = () => {
                         </h1>
                     </div>
                     <div className="hidden sm:flex items-center space-x-5">
-                        <button className="border-xl text-indigo-700 bg-white border border-indigo-700 text-xl  px-4 py-2 rounded-xl focus:bg-gray-200 hover:bg-gray-200  ">Create Wallet </button>
+                        <button onClick={createWallet} className="border-xl text-indigo-700 bg-white border border-indigo-700 text-xl  px-4 py-2 rounded-xl focus:bg-gray-200 hover:bg-gray-200  ">Create Wallet </button>
                         <button className="border-xl text-white  border bg-indigo-700 text-xl  px-4 py-2 rounded-xl hover:bg-indigo-500 ">Sign In </button>
                     </div>
 
