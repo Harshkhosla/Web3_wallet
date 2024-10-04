@@ -34,10 +34,10 @@ export const Header = () => {
                         </h1>
                     </div>
                     <div className="hidden sm:flex items-center space-x-5">
-                        <button className="border-xl text-indigo-700 bg-white border border-indigo-700 text-xl  px-4 py-2 rounded-xl focus:bg-gray-200 hover:bg-gray-200  ">Sign Up </button>
+                        <button className="border-xl text-indigo-700 bg-white border border-indigo-700 text-xl  px-4 py-2 rounded-xl focus:bg-gray-200 hover:bg-gray-200  ">Create Wallet </button>
                         <button className="border-xl text-white  border bg-indigo-700 text-xl  px-4 py-2 rounded-xl hover:bg-indigo-500 ">Sign In </button>
                     </div>
-                    
+
                 <div id="bgIcon" onClick={() => setshow(!show)} className={`focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800  justify-center items-center sm:hidden cursor-pointer`}>
                     <svg className={`${show ? 'hidden' : ''}`} width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path className=" transform duration-150" d="M4 6H20" stroke="#1F2937" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
