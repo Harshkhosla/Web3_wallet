@@ -38,27 +38,16 @@ export default function Home() {
     console.log(key);
   }, [key])
 
-  const createWallet = () => {
-    // console.log("hello");
-    setShow(true)
-  }
 
-
-
-
-  // const savekey=()=>{
-  //   setShow1("")
-  //   setShow2(true)
-
-  // }
 
   return (
     <ConnectionProvider endpoint={"https://solana-devnet.g.alchemy.com/v2/cZ3QMulagNtVTgeQhjSJm0vXLgyq2_Ue"}>
       <WalletProvider wallets={[]} autoConnect>
         <WalletModalProvider>
+          <div className="flex justify-between">
           <WalletMultiButton/>
           <WalletDisconnectButton/>
-          <div>Total balance:{show} </div>
+          </div>
           <AirDrop />
         </WalletModalProvider>
       </WalletProvider>
